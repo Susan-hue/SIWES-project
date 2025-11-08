@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Sign Up | M Music</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <style>
+  select {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: white !important;
+  }
+  option {
+    background-color: #2c1d6a !important;
+    color: white !important;
+  }
+</style>
+
+</head>
+
+    <body class="bg-gradient-to-b from-[#2c1d6a] to-[#26a4b8] flex items-center justify-center min-h-screen font-sans">
+
+        <div class="bg-white bg-opacity-10 backdrop-blur-md shadow-lg rounded-2xl p-8 w-full max-w-md text-white">
+            <h1 class="text-3xl font-bold text-center mb-6">Join the Vibe</h1>
+            <p class="text-center mb-6 text-sm text-gray-200">Sign up to discover new playlists and connect through music 🎵</p>
+
+            <form id="signupForm" class="space-y-4">
+                <div>
+                    <label for="name" class="block mb-1 font-medium">Full Name</label>
+                    <input id="name" type="text" placeholder="Enter your full name" class="w-full p-3 rounded-lg bg-white bg-opacity-20      focus:outline-none focus:ring-2 focus:ring-teal-300">
+                    <p id="nameError" class="text-red-300 text-sm hidden mt-1">Please enter your name</p>
+                </div>
+
+
+                <div>
+                    <label for="email" class="block mb-1 font-medium">Email</label>
+                    <input id="email" type="email" placeholder="example@email.com" class="w-full p-3 rounded-lg bg-white bg-opacity-20 focus:outline-none focus:ring-2 focus:ring-teal-300">
+                    <p id="emailError" class="text-red-300 text-sm hidden mt-1">Please enter a valid email</p>
+                </div>
+
+                <div>
+                    <label for="password" class="block mb-1 font-medium">Password</label>
+                    <input id="password" type="password" placeholder="Enter your password" class="w-full p-3 rounded-lg bg-white bg-opacity-20 focus:outline-none focus:ring-2 focus:ring-teal-300">
+                    <p id="passwordError" class="text-red-300 text-sm hidden mt-1">Password must be at least 6 characters</p>
+                </div>
+
+                <div>
+                    <label for="genre" class="block mb-1 font-medium">Favorite Genre</label>
+                    <select id="genre" class="w-full p-3 rounded-lg bg-cyan focus:outline-none focus:ring-2 focus:ring-teal-300">
+                        <option value="">Select a genre</option>
+                        <option>Pop</option>
+                        <option>Afrobeat</option>
+                        <option>Jazz</option>
+                        <option>Hip Hop</option>
+                        <option>Classical</option>
+                        <option>Rock</option>
+                    </select>
+                    <p id="genreError" class="text-red-300 text-sm hidden mt-1">Please select a genre</p>
+                </div>
+
+
+                <div class="flex items-center">
+                    <input id="subscribe" type="checkbox" class="w-4 h-4 text-teal-400 bg-transparent border-gray-400 focus:ring-2 focus:ring-teal-300">
+                    <label for="subscribe" class="ml-2 text-sm">Subscribe to our music newsletter</label>
+                </div>
+
+                <button type="submit" class="w-full py-3 rounded-lg bg-teal-500 hover:bg-teal-400 transition duration-300 font-semibold">
+                    Sign Up
+
+                </button>
+            </form>
+
+            <p id="successMessage" class="hidden text-green-300 text-center mt-4">🎶 Sign up successful! Welcome to M Music.</p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+    
+
+</html>

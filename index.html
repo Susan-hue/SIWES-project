@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1 ,200&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -33,7 +33,7 @@
 
             <p class="second-para">Music touches the soul in ways no other thing can, bridging the barriers between us</p>
 
-            <button class="button"> SIGN UP </button>
+            <button class="button" id="button">  SIGN UP </button>
 
             </div>
             
@@ -48,18 +48,15 @@
             <h2 class="playlists-text">Discover Playlists </h2>
             <div class="spotify-playlists">
                 <div class="iframe">
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EVKuMoAJjoTIw?utm_source=generator" 
-                    width="100%" height="400" frameBorder="0" allowfullscreen="" 
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                    loading="lazy"></iframe>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbLMw3ry7d7k?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                    </iframe>
                     <p class="text">A mix of soul, bossa nova, and jazz</p>
                 </div>
 
                 <div class="iframe iframe2">
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWYBO1MoTDhZI?utm_source=generator" 
-                    width="100%" height="400" frameBorder="0" 
-                    allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                    loading="lazy"></iframe>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1E8LX1dPtJZHnT?utm_source=generator&theme=0" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+
+                    </iframe>
                     <p class="text">Dive into the Feel-Good Vibes Playlist</p>
                 </div>
 
@@ -68,7 +65,7 @@
                     width="100%" height="400" frameBorder="0" allowfullscreen="" 
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                     loading="lazy"></iframe>
-                    <p class="text">Bedroom pop and indie</p>
+                    <p class="text">Olivia Rodrigo's playlist</p>
                 </div>
 
             </div>
@@ -95,9 +92,18 @@
                 <img src="2023wrapped_summary-share.jpeg" alt="" class="spotify-wrapped">
             </div>
 
-            <div class="footer">Susan 2023</div>
+            <div class="footer">Susan 2025</div>
     
         </section>
     </main>
+
+    <script>
+
+        document.getElementById("button").addEventListener("click", () => {
+        window.open("signup.html", "_blank");
+        
+    });
+
+    </script>
 </body>
 </html>
